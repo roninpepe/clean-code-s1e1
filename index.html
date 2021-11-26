@@ -13,31 +13,27 @@
   <body
       class="page">
     <div
-        class="page__header
-        header
-        aaa"><img
-        class="image
-        header__image"
+        class="page__header"><img
+        class="page__header-image"
         src="./eisenhower-matrix.jpg"><a
-        class="header__info"
+        class="page__header-info"
         href="https://goal-life.com/page/method/matrix-eisenhower"
         alt="The Eisenhower matrix">Want more details?</a></div>
     <div
         class="page__content
-        centered-main-page-element">
+        task-lists">
       <p
-          id="topsectionforaddingelementtolist"><label
+          class="task-lists__new-task"><label
           class="task-lists__task-list-header
           task-lists__new-task-header"
           for="new-task">Add Item</label>
         <div
-            class="task-lists__new-task
-            task-row-wrapper"><input
+            class="task-lists__new-task_flex"><input
             id="new-task"
             class="input
             input_text
             task-lists__new-task-input
-            task"
+            task-lists__new-task-input_grow"
             type="text"><button
             class="button">Add</button></div>
       </p>
@@ -45,60 +41,58 @@
           class="header
           task-lists__task-list-header">Todo</h3>
       <ul
-          id="incompletetasks"
           class="list
-          task-lists__task-list">
+          task-lists__task-list
+          task-lists__task-list_incompleted">
         <li
-            class="list-item
+            class="list__item
             task-lists__list-item"><input
             type="checkbox"
             class="input
             task-lists__list-item-content
             task-lists__checkbox"><label
             class="task-lists__list-item-content
-            task-lists__list-item-label
-            task">Pay Bills</label><input
+            task-lists__list-item-content_grow
+            task-lists__list-item-label">Pay Bills</label><input
             type="text"
             class="input
             input_text
             task-lists__list-item-content
-            task-lists__list-item-input
-            task"><button
+            task-lists__list-item-content_grow
+            task-lists__list-item-input"><button
             class="button
-            edit">Edit</button><button
+            button-edit">Edit</button><button
             class="button
             task-lists__list-item-content
-            delete"><img
+            button-delete"><img
             src="./remove.svg"
             alt="Remove"
             class="button-delete__image"></button></li>
         <li
-            class="list-item
+            class="list__item
             task-lists__list-item
-            task-lists__list-item_edit
-            editmode"><input
+            task-lists__list-item_edit"><input
             type="checkbox"
             class="input
             task-lists__list-item-content
             task-lists__checkbox"><label
             class="task-lists__list-item-content
+            task-lists__list-item-content_grow
             task-lists__list-item-label
-            task-lists__list-item-label_edit
-            task">Go Shopping</label><input
+            task-lists__list-item-label_edit">Go Shopping</label><input
             type="text"
-            value="Go Shopping"
             class="input
             input_text
             task-lists__list-item-content
+            task-lists__list-item-content_grow
             task-lists__list-item-input
-            task-lists__list-item-input_edit
-            task"><button
+            task-lists__list-item-input_edit"><button
             class="button
             task-lists__list-item-content
-            edit">Save</button><button
+            button-edit">Save</button><button
             class="button
             task-lists__list-item-content
-            delete"><img
+            button-delete"><img
             src="./remove.svg"
             alt="Remove"
             class="button-delete__image"></button></li>
@@ -107,11 +101,11 @@
           class="header
           task-lists__task-list-header">Completed</h3>
       <ul
-          id="completed-tasks"
           class="list
-          task-lists__task-list">
+          task-lists__task-list
+          task-lists__task-list_completed">
         <li
-            class="list-item
+            class="list__item
             task-lists__list-item"><input
             type="checkbox"
             class="input
@@ -119,21 +113,21 @@
             task-lists__checkbox"
             checked><label
             class="task-lists__list-item-content
+            task-lists__list-item-content_grow
             task-lists__list-item-label
-            task-lists__list-item-label_completed
-            task">See the Doctor</label><input
+            task-lists__list-item-label_completed">See the Doctor</label><input
             type="text"
             class="input
             input_text
             task-lists__list-item-content
-            task-lists__list-item-input
-            task"><button
+            task-lists__list-item-content_grow
+            task-lists__list-item-input"><button
             class="button
             task-lists__list-item-content
-            edit">Edit</button><button
+            button-edit">Edit</button><button
             class="button
             task-lists__list-item-content
-            delete"><img
+            button-delete"><img
             src="./remove.svg"
             alt="Remove"
             class="button-delete__image"></button></li>
