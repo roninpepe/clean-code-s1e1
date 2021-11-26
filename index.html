@@ -2,7 +2,7 @@
   <head>
     <title>Todo App</title>
     <link
-        href="https://fonts.googleapis.com/css?family=lato:300,400,700"
+        href="https://fonts.googleapis.com/css?family=Lato:300,400,700"
         rel="stylesheet">
     <link
         rel="stylesheet"
@@ -12,31 +12,38 @@
   </head>
   <body
       class="page">
-    <div
+    <header
         class="page__header"><img
         class="page__header-image"
         src="./eisenhower-matrix.jpg"><a
         class="page__header-info"
         href="https://goal-life.com/page/method/matrix-eisenhower"
-        alt="The Eisenhower matrix">Want more details?</a></div>
-    <div
+        alt="The Eisenhower matrix">Want more details?</a></header>
+    <section
         class="page__content
         task-lists">
-      <p
-          class="task-lists__new-task"><label
+      <h3
           class="task-lists__task-list-header
           task-lists__new-task-header"
-          for="new-task">Add Item</label>
-        <div
-            class="task-lists__new-task_flex"><input
+      ><label
+          for="new-task">Add Item</label></h3>
+      <ul
+          class="list
+          task-lists__task-list_new">
+        <li
+            class="list__item
+            task-lists__list-item"><input
             id="new-task"
             class="input
             input_text
-            task-lists__new-task-input
-            task-lists__new-task-input_grow"
+            task-lists__list-item-content
+            task-lists__list-item-content_grow
+            task-lists__list-item-input
+            task-lists__list-item-input_new"
             type="text"><button
-            class="button">Add</button></div>
-      </p>
+            class="button
+            button_add">Add</button></li>
+      </ul>
       <h3
           class="header
           task-lists__task-list-header">Todo</h3>
@@ -61,13 +68,14 @@
             task-lists__list-item-content_grow
             task-lists__list-item-input"><button
             class="button
-            button-edit">Edit</button><button
+            button_edit">Edit</button><button
             class="button
             task-lists__list-item-content
-            button-delete"><img
+            button_delete
+            button-icon"><img
             src="./remove.svg"
             alt="Remove"
-            class="button-delete__image"></button></li>
+            class="button-icon__image"></button></li>
         <li
             class="list__item
             task-lists__list-item
@@ -81,6 +89,7 @@
             task-lists__list-item-label
             task-lists__list-item-label_edit">Go Shopping</label><input
             type="text"
+            value="Go Shopping"
             class="input
             input_text
             task-lists__list-item-content
@@ -89,13 +98,14 @@
             task-lists__list-item-input_edit"><button
             class="button
             task-lists__list-item-content
-            button-edit">Save</button><button
+            button_edit">Save</button><button
             class="button
             task-lists__list-item-content
-            button-delete"><img
+            button_delete
+            button-icon"><img
             src="./remove.svg"
             alt="Remove"
-            class="button-delete__image"></button></li>
+            class="button-icon__image"></button></li>
       </ul>
       <h3
           class="header
@@ -124,15 +134,16 @@
             task-lists__list-item-input"><button
             class="button
             task-lists__list-item-content
-            button-edit">Edit</button><button
+            button_edit">Edit</button><button
             class="button
             task-lists__list-item-content
-            button-delete"><img
+            button_delete
+            button-icon"><img
             src="./remove.svg"
             alt="Remove"
-            class="button-delete__image"></button></li>
+            class="button-icon__image"></button></li>
       </ul>
-    </div>
+    </section>
     <script
         src="app.js"></script>
   </body>
