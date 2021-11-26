@@ -1,5 +1,5 @@
 /* Basic style */
-body {
+.page {
   background-color: #f8f8f8;
   color: #333;
   font-family: lato, sans-serif;
@@ -12,7 +12,7 @@ body {
   text-align: right;
 }
 
-.aaa img {
+.header__image {
   width: 100%;
 }
 
@@ -44,21 +44,22 @@ body {
   display: flex;
 }
 
-ul {
+.list {
   margin: 0px;
   padding: 0px;
 }
 
-li,
-h3 {
+.list-item,
+.header {
   list-style: none;
 }
 
-input,button{
+.input,
+.button{
   outline: none;
 }
 
-button {
+.button {
   background: none;
   border: 0px;
   color: #888;
@@ -68,13 +69,12 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.button:hover {
   color: #3a3a3a;
 }
 
 /* Heading */
-h3,
-label[for = "new-task"] {
+.task-lists__task-list-header {
   color: #333;
   font-weight: 700;
   font-size: 15px;
@@ -84,7 +84,7 @@ label[for = "new-task"] {
   text-transform: uppercase;
 }
 
-input[type = "text"] {
+.input_text {
   margin: 0px;
   font-size: 18px;
   line-height: 18px;
@@ -97,22 +97,22 @@ input[type = "text"] {
   color: #888;
 }
 
-input[type = "text"]:focus {
+.input_text:focus {
   color: #333;
 }
 
 /* New task */
-label[for = "new-task"] {
+.task-lists__new-task-header {
   display: block;
   margin: 0px 0px 20px;
 }
 
-input#new-task {
+.task-lists__new-task-input {
   width: 318px;
 }
 
 /* Task list */
-li {
+.task-lists__list-item {
   overflow: hidden;
   padding: 20px 0px;
   border-bottom: 1px solid #eee;
@@ -121,51 +121,51 @@ li {
   align-items: center;
 }
 
-li > * {
+.task-lists__list-item-content {
   vertical-align: middle;
 }
 
-li > input[type = "checkbox"] {
+.task-lists__checkbox {
   margin: 0px 10px;
 }
 
-li > label {
+.task-lists__list-item-label {
   padding-left: 10px;
   box-sizing: border-box;
   font-size: 18px;
   width: 226px;
 }
 
-li > input[type = "text"] {
+.task-lists__list-item-input {
   width: 226px;
 }
 
-button.delete img {
+.button-delete__image {
   height: 2em;
   transform: rotatez(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.button-delete__image:hover {
   transform: rotatez(0);
 }
 
 /* Completed */
-ul#completed-tasks label {
+.task-lists__list-item-label_completed {
   text-decoration: line-through;
   color: #888;
 }
 
 /* Edit tsask */
-ul li input[type = text] {
+.task-lists__list-item-input {
   display: none;
 }
 
-ul li.editmode input[type = text] {
+.task-lists__list-item-input_edit {
   display: inline-block;
   width: 224px;
 }
 
-ul li.editmode label {
+.task-lists__list-item-label_edit {
   display: none;
 }
